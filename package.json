@@ -1,0 +1,13 @@
+{
+	"name": "diagram",
+	"private": true,
+	"description": "Diagrams init lar.",
+	"version": "0.1.0",
+	"repository": "",
+	"main": "grunt",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-connect": "latest",
+		"grunt-contrib-watch": "latest"
+	}
+}
