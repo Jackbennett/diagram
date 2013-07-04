@@ -5,7 +5,7 @@
 
 	// Setup the editor diagram
 	// editor.getSession().setMode("ace/mode/asciidoc");
-	editor_div.on('keypress', _.debounce(on_change, 200));
+	editor_div.on('keyup', _.debounce(on_change, 200));
 
 	on_change();
 
