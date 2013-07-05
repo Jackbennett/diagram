@@ -1,4 +1,4 @@
-  function setup_editor(div) {
+function setup_editor(div) {
 
 	var editor_div = div.find(".editor");
 	var diagram_div = div.find(".diagram");

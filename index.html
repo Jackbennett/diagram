@@ -3,18 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Diagrams</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
 	<script src="components/jquery/jquery.min.js"></script>
 	<script src="components/raphael/raphael-min.js"></script>
 	<script src="components/lodash/dist/lodash.min.js"></script>
 	<script src="js/sequence-diagrams.min.js"></script>
 </head>
 <body>
-	<h1>Diagram</h1>
-	<p>Live damnit.</p>
-	
+	<header>
+		<h1>Diagram</h1>
+	</header>
+
 	<section id="pad">
-		<textarea class="editor" contenteditable>A->B: Message</textarea>
-		<div class="diagram">A->B: Message of much importance</div>
+		<div class="paint">
+			<div class="diagram"></div>
+		</div>
+		<div class="col right">
+			<textarea class="editor">A->B: Message</textarea>
+		</div>
+	</section>
+
+	<section>
+		<h2>Syntax</h2>
+
+		<dl>
+			<dt>title</dt>
+			<dd>Title of the diagram</dd>
+			<dt>pariticpant <em>name</em></dt>
+			<dd>Add an actor as a participant e.g. HyperA</dd>
+			<dt>note [<em>Left of</em> | <em>right of</em> | <em>over</em>] <em>actor</em> : <em>message</em></dt>
+			<dd>Add a notation</dd>
+			<dt>actor</dt>
+			<dd>- Solid line, -- Dashed Line, &gt; Block arrow, &gt;&gt; Drawn arrow</dd>
+		</dl>
 	</section>
 
 	<script src="js/diagram.js"></script>

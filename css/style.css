@@ -1,0 +1,42 @@
+body{
+	position: relative;
+}
+header{
+	margin:2em 0;
+}
+
+body, textarea{
+	font: 100 16px/1.3em "Segoe UI", Optima, sans-serif;
+}
+	h1,h2,h3,h4,h5,h6{font-weight: 100;}
+
+header, section{
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+section{
+	display: flex;
+}
+.right{
+	width:25%;
+	min-height:250px;
+	height:100%;
+	display:inline-block;
+}
+	.right textarea{
+		width:90%;
+		height: 90%;
+		margin:0;
+		padding:5%;
+		border:0;
+		background: orange;
+		display: block;
+	}
+	.right textarea:focus{outline:none;}
+
+.paint{
+	width:75%;
+	display: inline-block;
+}

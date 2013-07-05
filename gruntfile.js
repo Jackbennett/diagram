@@ -6,7 +6,7 @@ module.exports = function(grunt){
 				nospawn: true
 			},
 			js: {
-				files: ['js/**', '*.html'],
+				files: ['js/*.js', '*.html', 'css/*.css'],
 			}
 		},
 		connect: {
