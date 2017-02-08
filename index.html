@@ -16,27 +16,33 @@
 		<h1>Diagram</h1>
 	</header>
 
-	<section id="pad">
-		<div class="paint">
-			<div class="diagram"></div>
-		</div>
-		<div class="col right">
-			<textarea class="editor">A->B: Message</textarea>
-		</div>
+	<section id="chart">
 	</section>
 
-	<section>
+	<section id="editor">
+		<h1>Code</h1>
+<textarea>
+title: Process for new shared folders
+note over user: Create request new shared folder
+user -> admin: Send request form
+note over admin: Check share permissions
+admin -- shared drive: Create New folder
+admin -> user: inform User
+user -> shared drive: add files
+</textarea>
+	</section>
+	<section id="help">
 		<h2>Syntax</h2>
 
 		<dl>
-			<dt>title</dt>
+			<dt>title: <em>chart title</em></dt>
 			<dd>Title of the diagram</dd>
 			<dt>pariticpant <em>name</em></dt>
-			<dd>Add an actor as a participant e.g. HyperA</dd>
+			<dd>Add an actor as a participant e.g. user</dd>
 			<dt>note [<em>Left of</em> | <em>right of</em> | <em>over</em>] <em>actor</em> : <em>message</em></dt>
 			<dd>Add a notation</dd>
 			<dt>actor</dt>
-			<dd>- Solid line, -- Dashed Line, &gt; Block arrow, &gt;&gt; Drawn arrow</dd>
+			<dd>- Solid line, -- Dashed Line, &gt; Block arrow</dd>
 		</dl>
 	</section>
 

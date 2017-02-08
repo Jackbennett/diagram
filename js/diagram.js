@@ -1,7 +1,7 @@
 function setup_editor(div) {
 
-  var editor_div = div.find(".editor");
-  var diagram_div = div.find(".diagram");
+  var editor_div = $('#editor textarea');
+  var diagram_div = $('#chart');
 
   // Setup the editor diagram
   // editor.getSession().setMode("ace/mode/asciidoc");
